@@ -1,0 +1,27 @@
+[submodule "environments/production/modules/zabbix"]
+	path = environments/production/modules/zabbix
+	url = https://github.com/dj-wasabi/puppet-zabbix.git
+[submodule "environments/production/modules/postgresql"]
+	path = environments/production/modules/postgresql
+	url = https://github.com/puppetlabs/puppetlabs-postgresql.git
+[submodule "environments/production/modules/stdlib"]
+	path = environments/production/modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
+[submodule "environments/production/modules/apache"]
+	path = environments/production/modules/apache
+	url = https://github.com/puppetlabs/puppetlabs-apache.git
+[submodule "environments/production/modules/firewall"]
+	path = environments/production/modules/firewall
+	url = https://github.com/puppetlabs/puppetlabs-firewall.git
+[submodule "environments/production/modules/inifile"]
+	path = environments/production/modules/inifile
+	url = https://github.com/puppetlabs/puppetlabs-inifile.git
+[submodule "environments/production/modules/concat"]
+	path = environments/production/modules/concat
+	url = https://github.com/puppetlabs/puppetlabs-concat.git
+[submodule "environments/production/modules/ruby"]
+	path = environments/production/modules/ruby
+	url = https://github.com/puppetlabs/puppetlabs-ruby.git
+[submodule "environments/production/modules/firewalld"]
+	path = environments/production/modules/firewalld
+	url = https://github.com/crayfishx/puppet-firewalld
