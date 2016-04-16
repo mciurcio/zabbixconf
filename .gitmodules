@@ -40,3 +40,6 @@
 [submodule "environments/production/modules/puppet"]
 	path = environments/production/modules/puppet
 	url = https://bitbucket.org/instruct/puppet-puppet.git
+[submodule "environments/production/modules/exports"]
+	path = environments/production/modules/exports
+	url = https://github.com/acidprime/exports.git
