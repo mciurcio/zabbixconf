@@ -6,14 +6,14 @@ class profile::zabbix_agent {
     port     => 10050,
     protocol => 'tcp',
   }
-  
+
   class { 'zabbix::agent':
-    manage_resources => true,
-    server => 'zabbix.instruct',
-    serveractive => 'zabbix.instruct',
+    manage_resources    => true,
+    server              => 'zabbix.instruct',
+    serveractive        => 'zabbix.instruct',
     refreshactivechecks => '60',
-    listenip => $::ipaddress_enp0s8,
-    zbx_templates => ['Template ICMP Ping', 'Template App Zabbix Agent'],
+    listenip            => $::ipaddress_enp0s8,
+    zbx_templates       => ['Template ICMP Ping', 'Template App Zabbix Agent'],
   }
 
 }

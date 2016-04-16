@@ -45,24 +45,24 @@ class profile::zabbix_server_ssl {
     ensure => file,
     source => "/etc/puppetlabs/puppet/ssl/certs/${::fqdn}.pem",
   }
-    
+
   file { '/etc/zabbix/ssl/ca.pem':
     ensure => file,
-    source => "/etc/puppetlabs/puppet/ssl/certs/ca.pem",
+    source => '/etc/puppetlabs/puppet/ssl/certs/ca.pem',
   }
-  
+
   file { '/etc/zabbix/ssl/crl.pem':
     ensure => file,
-    source => "/etc/puppetlabs/puppet/ssl/crl.pem",
+    source => '/etc/puppetlabs/puppet/ssl/crl.pem',
   }
 
   class { 'zabbix':
     zabbix_url       => $::fqdn,
     manage_resources => true,
-    tlscafile => '/etc/zabbix/ssl/ca.pem',
-    tlscertfile => '/etc/zabbix/ssl/server-cert.pem',
-    tlscrlfile => '/etc/zabbix/ssl/crl.pem',
-    tlskeyfile => '/etc/zabbix/ssl/server-key.pem',
+    tlscafile        => '/etc/zabbix/ssl/ca.pem',
+    tlscertfile      => '/etc/zabbix/ssl/server-cert.pem',
+    tlscrlfile       => '/etc/zabbix/ssl/crl.pem',
+    tlskeyfile       => '/etc/zabbix/ssl/server-key.pem',
   }
 
 }

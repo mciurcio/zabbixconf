@@ -34,7 +34,7 @@ class profile::zabbix_server {
 
   class { 'zabbix':
     zabbix_url       => $::fqdn,
-    manage_resources => true,
+    manage_resources => false,
   }
 
 }
