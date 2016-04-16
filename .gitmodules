@@ -25,3 +25,18 @@
 [submodule "environments/production/modules/firewalld"]
 	path = environments/production/modules/firewalld
 	url = https://github.com/crayfishx/puppet-firewalld
+[submodule "environments/production/modules/ntp"]
+	path = environments/production/modules/ntp
+	url = https://github.com/puppetlabs/puppetlabs-ntp.git
+[submodule "environments/production/modules/puppetdb"]
+	path = environments/production/modules/puppetdb
+	url = https://github.com/puppetlabs/puppetlabs-puppetdb.git
+[submodule "environments/production/modules/java"]
+	path = environments/production/modules/java
+	url = https://github.com/puppetlabs/puppetlabs-java.git
+[submodule "environments/production/modules/java_ks"]
+	path = environments/production/modules/java_ks
+	url = https://github.com/puppetlabs/puppetlabs-java_ks.git
+[submodule "environments/production/modules/puppet"]
+	path = environments/production/modules/puppet
+	url = https://bitbucket.org/instruct/puppet-puppet.git
